@@ -1,7 +1,6 @@
 ## EIA_download_parse, a work in progress
 
-EIA provides bulk data downloads
-The following Python code downloads and then parses each file into a metadata csv and data.csv which includes only the series_id, YYYYMMDD and value.  
+EIA provides bulk data downloads however they are not ready to use. The following Python code downloads and then parses each file into a metadata csv and data.csv which includes only the series_id, YYYYMMDD and value.  
 
 A few of the notable features related to this work:
 - The source text files contain many json files.  Each line is a complete fully formed json file.
