@@ -1,11 +1,11 @@
-## EIA_download_parse, a work in progress
+## EIA_bulk_download_parse, a work in progress
 
-EIA provides bulk data downloads however they are not ready to use. The following Python code downloads and then parses each file into a metadata csv and data.csv which includes only the series_id, YYYYMMDD and value.  
+The U.S. Energy Information Adminstration (EIA) provides bulk data downloads however they are not ready to use. The following Python code downloads and then parses each file into a metadata csv and data.csv which includes only the series_id, YYYYMMDD and value.  
 
 A few of the notable features related to this work:
-- The source text files contain many json files.  Each line is a complete fully formed json file.
-- The json files contain a data key which is a list of data 
-- I chose to create seperate files for the meta and the data to be friendly for imported to a relational database.  
+- The EIA source text files contain many json files.  Each line is a complete fully formed json file.
+- The json files contain a 'data' key which is a list of the historical data 
+- I chose to create seperate files for the meta and the data thinking that the data would be smaller and more friendly to use in a relational database.  
 
 
 
